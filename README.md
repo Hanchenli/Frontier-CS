@@ -82,7 +82,7 @@ cd algorithmic && docker-compose up -d
 python scripts/run_tests.py <model_name>
 ```
 
-**Single Evaluation API:**
+**Simple Evaluation API:**
 
 You can programmatically evaluate solutions using the Python API after setting up the judge server docker, which provides a convenient interface to integrate with your customized agents or evolving frameworks.
 
