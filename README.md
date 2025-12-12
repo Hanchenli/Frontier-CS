@@ -1,4 +1,9 @@
-## Frontier-CS: Computer Science Last Exam
+<p align="">
+  <a href="https://frontier-cs.org">
+    <img src="assets/logo.png" alt="Frontier-CS Logo" width="2000"/>
+  </a>
+</p>
+
 [Website](https://frontier-cs.org) | [GitHub](https://github.com/FrontierCS/Frontier-CS)
 
 ![Research Problems](https://img.shields.io/badge/Research_Problems-50-blue) ![Algorithmic Problems](https://img.shields.io/badge/Algorithmic_Problems-110-green)
