@@ -4,9 +4,7 @@
   </a>
 </p>
 
-[Website](https://frontier-cs.org) | [GitHub](https://github.com/FrontierCS/Frontier-CS)
-
-![Research Problems](https://img.shields.io/badge/Research_Problems-50-blue) ![Algorithmic Problems](https://img.shields.io/badge/Algorithmic_Problems-110-green)
+[![Website](https://img.shields.io/badge/Website-frontier--cs.org-orange?logo=googlechrome)](https://frontier-cs.org) ![Research Problems](https://img.shields.io/badge/Research_Problems-50-blue) ![Algorithmic Problems](https://img.shields.io/badge/Algorithmic_Problems-110-green)
 
 
 
