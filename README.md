@@ -4,9 +4,9 @@
   </a>
 </p>
 
-<h3 align="center">
-Computer Science Last Exam
-</h3>
+<h2 align="center">
+Evolving Challenges for Evolving Intelligence
+</h2>
 
 <p align="center">
   <a href="https://frontier-cs.org"><img src="https://img.shields.io/badge/Website-frontier--cs.org-orange?logo=googlechrome" alt="Website"></a>
