@@ -112,6 +112,8 @@ print(f"Score: {result.score}")
 
 We release partial test cases so you can develop and debug locally. For full evaluation and leaderboard inclusion, submit your solutions to qmang@berkeley.edu, or wenhao.chai@princeton.edu, or zhifei.li@berkeley.edu following the instructions in [SUBMIT.md](SUBMIT.md).
 
+Questions? Join our [Discord](https://discord.gg/k4hd2nU4UE)
+
 ## Acknowledgments
 
 Some problems are adapted from [ALE-bench](https://github.com/SakanaAI/ALE-Bench) and [AI-Driven Research for Systems (ADRS)](https://ucbskyadrs.github.io/).
