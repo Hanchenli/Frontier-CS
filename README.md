@@ -81,7 +81,7 @@ frontier-eval --algorithmic 0 <your_solution.cpp>
 # List all problems
 frontier-eval --list
 
-# Evaluate a solution locally for flash_attn problem (requires Docker)
+# Evaluate a produced solution locally for flash_attn problem (requires Docker)
 frontier-eval flash_attn <your_solution.py>
 
 # Evaluate on cloud (requires SkyPilot)
