@@ -41,13 +41,16 @@ jobs:
       - name: Set up GCP credentials
         run: |
           echo '${{ secrets.GCP_CREDENTIALS }}' > /tmp/gcp-key.json
-          # Support both service account and authorized_user credentials
+          # Set as application default credentials for SkyPilot
+          mkdir -p ~/.config/gcloud
+          cp /tmp/gcp-key.json ~/.config/gcloud/application_default_credentials.json
+          # For service account, also activate with gcloud
           if grep -q '"type": "service_account"' /tmp/gcp-key.json; then
             gcloud auth activate-service-account --key-file=/tmp/gcp-key.json
-          else
-            gcloud auth login --cred-file=/tmp/gcp-key.json --quiet
           fi
           gcloud config set project ${{ secrets.GCP_PROJECT_ID }}
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: /tmp/gcp-key.json
 
       - name: Configure SkyPilot
         run: |
