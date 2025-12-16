@@ -90,3 +90,16 @@ jobs:
           git add results/
           git diff --staged --quiet || git commit -m "chore: update evaluation results [skip ci]"
           git push
+
+      - name: Cleanup SkyPilot clusters
+        if: always()
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: /tmp/gcp-key.json
+        run: |
+          echo "Cleaning up SkyPilot clusters..."
+          # List and terminate all eval-* clusters
+          uv run sky status --refresh 2>/dev/null | grep -E '^eval-' | awk '{print $1}' | while read cluster; do
+            echo "Terminating cluster: $cluster"
+            uv run sky down "$cluster" -y || true
+          done
+          echo "Cleanup complete"
